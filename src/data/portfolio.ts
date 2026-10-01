@@ -26,7 +26,7 @@ export const projects = [
     title: "Khalti Clone",
     description: "A payment app UI clone built with Next.js and Tailwind CSS.",
     tech: ["Next.js", "Tailwind CSS"],
-    link: "",
+    link: "https://my-nextjs-khalti.vercel.app/",
   },
   {
     title: "Secure Asset Tracer",
