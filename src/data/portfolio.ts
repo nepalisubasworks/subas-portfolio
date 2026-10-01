@@ -4,7 +4,7 @@ export const profile = {
   name: "Subas Nepali",
   role: "Cybersecurity Intern",
   tagline:
-    "Student developer building secure, modern web apps with Next.js, React",
+    "Student developer building secure, modern web apps with Next.js, React, PHP and MySQL.",
   location: "Damauli, Tanahun, Nepal",
   email: "nepalisubas18@gmail.com",
   github: "https://github.com/nepalisubasworks",
@@ -29,10 +29,11 @@ export const projects = [
     link: "https://my-nextjs-khalti.vercel.app/",
   },
   {
-    title: "Secure Asset Tracer",
-    description: "A secure asset tracking web app built with React and Next.js.",
-    tech: ["React", "Next.js"],
-    link: "",
+    title: "Secure Asset Tracker",
+    description:
+      "A role-based device custody tracker with secure login, admin and user roles, and full asset management.",
+    tech: ["Next.js", "React", "Prisma", "SQLite", "NextAuth"],
+    link: "https://github.com/nepalisubasworks/secure-asset-tracker",
   },
   {
     title: "Student Registration Record System",
@@ -41,13 +42,14 @@ export const projects = [
     link: "",
   },
 ];
+
 export const experience = [
   {
     title: "Cybersecurity Intern",
     place: "Inpro Academy",
     period: "Aug 2026 – Present",
     description:
-      "Working with Kali Linux, testing website login replicas, and learning full-stack development alongside.",
+      "Working with Kali Linux and VMware, testing website login replicas, and learning full-stack development alongside.",
   },
 ];
 
