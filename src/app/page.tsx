@@ -1,3 +1,4 @@
+import Image from "next/image";  
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Section from "@/components/Section";
@@ -13,13 +14,23 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
-        <Section id="about" title="About">
-          <div className="space-y-4 text-lg leading-relaxed text-neutral-300">
-            {profile.about.map((p) => (
-              <p key={p}>{p}</p>
-            ))}
-          </div>
-        </Section>
+       <Section id="about" title="About">
+  <div className="flex flex-col items-center gap-8 sm:flex-row sm:items-start">
+    <Image
+      src="/profile.jpg"
+      alt={`${profile.name} profile photo`}
+      width={180}
+      height={180}
+      className="h-44 w-44 rounded-full border-2 border-emerald-400/60 object-cover"
+      priority
+    />
+    <div className="space-y-4 text-lg leading-relaxed text-neutral-300">
+      {profile.about.map((p) => (
+        <p key={p}>{p}</p>
+      ))}
+    </div>
+  </div>
+</Section>
         <Section id="skills" title="Skills">
           <Skills />
         </Section>
